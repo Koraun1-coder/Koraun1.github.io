@@ -1,49 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koraun Humphrey | Engineering Portfolio</title>
+
+  <title>Koraun Humphrey | Computer Engineering</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
 
-  <h1>Koraun Humphrey</h1>
-  <h2>Computer Engineering Student</h2>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="logo">KH.</a>
 
-  <p>
-    Interested in embedded systems, firmware, digital logic,
-    and hardware-software integration.
-  </p>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <hr>
 
-  <h2>Projects</h2>
+  <!-- HERO -->
+  <header id="home" class="hero">
 
-  <h3>FPGA Synchronous Up/Down Counter</h3>
-  <p>
-    Designed and implemented a synchronous counter using finite-state
-    machine logic, D flip-flops, Quartus Prime, and a DE10-Lite FPGA.
-  </p>
+    <div class="hero-content">
 
-  <h3>Arduino Ultrasonic Proximity Indicator</h3>
-  <p>
-    Built an Arduino-based proximity detection system that measures
-    object distance and changes LED indicators based on range.
-  </p>
+      <p class="eyebrow">COMPUTER ENGINEERING • NC A&amp;T</p>
 
-  <h3>FBS Offensive Performance Analyzer</h3>
-  <p>
-    Developed a Python program that processes 2023 college football
-    offensive statistics and generates a Top 10 ranking.
-  </p>
+      <h1>Koraun Humphrey</h1>
 
-  <h3>Room Presence Logger</h3>
-  <p>
-    Embedded systems project currently in development for detecting
-    and logging room occupancy.
-  </p>
+      <h2>
+        Embedded Systems.
+        <span>Firmware.</span>
+        Digital Hardware.
+      </h2>
+
+      <p class="hero-description">
+        Computer Engineering student interested in building systems at the
+        intersection of hardware and software, with hands-on experience in
+        FPGA digital logic, microcontrollers, sensors, C++, and Python.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="button primary">View My Projects</a>
+
+        <a
+          href="https://github.com/Koraun1-coder"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button secondary"
+        >
+          GitHub
+        </a>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+      <p class="section-label">ABOUT ME</p>
+
+      <h2>Engineering from both sides of the system.</h2>
+
+      <p class="about-text">
+        I'm a Computer Engineering student at North Carolina A&amp;T State
+        University with a growing focus on embedded systems and firmware.
+        I enjoy understanding how software interacts with physical hardware
+        and applying that knowledge through hands-on engineering projects.
+      </p>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+      <p class="section-label">FEATURED WORK</p>
+
+      <div class="section-heading">
+        <h2>Projects</h2>
+
+        <p>
+          Hardware, embedded systems, digital logic, and software projects
+          I've designed and built.
+        </p>
+      </div>
+
+
+      <div class="project-grid">
+
+        <!-- FPGA PROJECT -->
+        <article class="project-card featured">
+
+          <div class="project-number">01</div>
+
+          <div class="project-content">
+
+            <p class="project-type">DIGITAL HARDWARE</p>
+
+            <h3>FPGA Synchronous Up/Down Counter</h3>
+
+            <p>
+              Designed and implemented a 2-bit synchronous up/down counter
+              using a Moore finite-state machine, D flip-flops, next-state
+              logic, and a seven-segment display.
+            </p>
+
+            <p>
+              Developed the state-transition logic in Quartus Prime,
+              verified system behavior through waveform simulation, and
+              implemented the final design on a DE10-Lite FPGA.
+            </p>
+
+            <div class="tags">
+              <span>FPGA</span>
+              <span>Quartus Prime</span>
+              <span>FSM</span>
+              <span>Digital Logic</span>
+              <span>DE10-Lite</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- ARDUINO PROJECT -->
+        <article class="project-card">
+
+          <div class="project-number">02</div>
+
+          <div class="project-content">
+
+            <p class="project-type">EMBEDDED SYSTEMS</p>
+
+            <h3>Arduino Ultrasonic Proximity Indicator</h3>
+
+            <p>
+              Developed an Arduino-based proximity detection system using an
+              ultrasonic sensor to measure object distance in real time.
+            </p>
+
+            <p>
+              Programmed C++ control logic to classify distance ranges and
+              dynamically change LED indicators based on sensor readings.
+            </p>
+
+            <div class="tags">
+              <span>Arduino</span>
+              <span>C++</span>
+              <span>Sensors</span>
+              <span>Embedded Systems</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PYTHON PROJECT -->
+        <article class="project-card">
+
+          <div class="project-number">03</div>
+
+          <div class="project-content">
+
+            <p class="project-type">SOFTWARE • DATA</p>
+
+            <h3>FBS Offensive Performance Analyzer</h3>
+
+            <p>
+              Developed a Python application that processes 2023 FBS
+              offensive statistics and compares team performance across
+              multiple statistical categories.
+            </p>
+
+            <p>
+              Implemented data processing, functions, sorting, and ranking
+              logic to generate a composite Top 10 offensive ranking.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Data Processing</span>
+              <span>Algorithms</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- ROOM LOGGER -->
+        <article class="project-card">
+
+          <div class="project-number">04</div>
+
+          <div class="project-content">
+
+            <div class="project-heading-row">
+              <p class="project-type">PERSONAL PROJECT</p>
+              <span class="status">IN DEVELOPMENT</span>
+            </div>
+
+            <h3>Room Presence Logger</h3>
+
+            <p>
+              Developing an embedded system designed to detect room
+              occupancy and log presence data over time.
+            </p>
+
+            <p>
+              The project is being developed as a deeper exploration of
+              sensor integration, embedded programming, and real-world
+              hardware-software interaction.
+            </p>
+
+            <div class="tags">
+              <span>Embedded Systems</span>
+              <span>Sensors</span>
+              <span>Data Logging</span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+
+      <p class="section-label">TECHNICAL TOOLKIT</p>
+
+      <h2>Skills &amp; Technologies</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <p>C++ / Arduino</p>
+          <p>Python</p>
+          <p>Java</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Hardware</h3>
+          <p>FPGA Development</p>
+          <p>Digital Logic</p>
+          <p>Microcontrollers</p>
+          <p>Sensor Integration</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Engineering Tools</h3>
+          <p>Quartus Prime</p>
+          <p>Multisim</p>
+          <p>MATLAB</p>
+          <p>SolidWorks</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+
+      <p class="section-label">CONTACT</p>
+
+      <h2>Let's build something.</h2>
+
+      <p>
+        I'm currently seeking internship opportunities in embedded systems,
+        firmware, digital hardware, and related Computer Engineering fields.
+      </p>
+
+      <div class="contact-links">
+
+        <a href="mailto:kshumphrey@aggies.ncat.edu">
+          Email Me
+        </a>
+
+        <a
+          href="https://github.com/Koraun1-coder"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/koraun-humphrey-b0b871186"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Designed &amp; built by Koraun Humphrey.</p>
+  </footer>
 
 </body>
 </html>
