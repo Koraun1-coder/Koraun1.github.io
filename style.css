@@ -406,3 +406,10 @@ footer {
   }
 
 }
+.project-video {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+    margin-top: 15px;
+    display: block;
+}
